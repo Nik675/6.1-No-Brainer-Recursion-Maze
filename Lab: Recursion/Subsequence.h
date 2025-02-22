@@ -7,6 +7,7 @@ using namespace std;
 
 class Subsequence {
 public:
+
     Subsequence(string word) : originalWord(word) {
 
     }
@@ -18,7 +19,7 @@ public:
 
     friend ostream& operator<<( ostream& os, const Subsequence& s ) 
     {
-        os << "Original Word: " << s.originalWord;
+        os << "original word - " << s.originalWord;
         return os;
     }
 
@@ -44,4 +45,4 @@ private:
     }
 };
 
-#endif // SUBSEQUENCE_H
+#endif
